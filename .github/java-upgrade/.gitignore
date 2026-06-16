@@ -1,0 +1,14 @@
+# Maven
+target/
+
+# SQLite
+*.db
+
+# NetBeans
+nbproject/private/
+
+# Java
+*.class
+
+# Logs
+*.log

@@ -17,7 +17,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-import tutorial_app_product_maintenance.AppProductMaintenance;
+import app_product_management.AppProductMaintenance;
+import static javafx.application.Application.launch;
 
 public class AppPosMain extends Application {
 
@@ -76,6 +77,7 @@ public class AppPosMain extends Application {
 
         btnProduct.setOnAction(e -> {
             setActiveButton(btnProduct);
+
             try {
                 AppProductMaintenance appProductMaintenance = new AppProductMaintenance();
                 switchView(wrapProductManagement(appProductMaintenance.getRootPane()));
